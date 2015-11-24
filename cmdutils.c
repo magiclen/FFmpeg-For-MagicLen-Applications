@@ -1184,7 +1184,7 @@ int show_buildconf(void *optctx, const char *opt, const char *arg)
 
 int show_license(void *optctx, const char *opt, const char *arg)
 {
-#if BUILD_MAGIC
+#ifdef MAGIC_BUILD
 	printf(
     "This version of %s is built by magiclen.org. You can not use it to do any commercial activities.\n",
     program_name );
