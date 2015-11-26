@@ -1,0 +1,14 @@
+prefix=/home/magiclen/ffmpeg-android/android/x86
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 56.60.100
+Requires: libswresample >= 1.2.101, libavutil >= 54.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -lssl -lcrypto -lxvidcore -L/home/magiclen/ffmpeg-android/android/x86/lib -lx265 -L/home/magiclen/ffmpeg-android/android/x86/lib -lx264 -lm -ldl -L/home/magiclen/ffmpeg-android/android/x86/lib -lwebp -lwavpack -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -lvorbisenc -lvorbis -logg -lvo-amrwbenc -lvo-aacenc -L/home/magiclen/ffmpeg-android/android/x86/lib -lvidstab -L/home/magiclen/ffmpeg-android/android/x86/lib -lv4l2 -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -L/home/magiclen/ffmpeg-android/android/x86/lib -lspeex -lsoxr -L/home/magiclen/ffmpeg-2.8.1/android/arm/lib -L/home/magiclen/ffmpeg-android/android/x86/lib -lrtmp -lz -lssl -lcrypto -L/home/magiclen/ffmpeg-android/android/x86/lib -lopus -lopenjpeg -DOPJ_STATIC -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/home/magiclen/ffmpeg-android/android/x86/lib -lfribidi -L/home/magiclen/ffmpeg-android/android/x86/lib -lfreetype -L/home/magiclen/ffmpeg-android/android/x86/lib -lfontconfig -lfreetype -L/home/magiclen/ffmpeg-android/android/x86/lib -lfdk-aac -lm -lfaac -L/home/magiclen/ffmpeg-android/android/x86/lib -ldcadec -L/home/magiclen/ffmpeg-android/android/x86/lib -lcaca -L/home/magiclen/ffmpeg-android/android/x86/lib -lbs2b -L/home/magiclen/ffmpeg-android/android/x86/lib -lbluray -L/home/magiclen/ffmpeg-android/android/x86/lib -lass -lm -liconv -lharfbuzz -lfontconfig -lfribidi -lfreetype -ldl -lm -llzma -lbz2 -lz -pthread /home/magiclen/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/libgnustl_static.a /home/magiclen/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/libsupc++.a -lc -lz -lstdc++ -ldl -lass -lexpat -lm -lpng -lexpat -lxml2 -lfontconfig -lfreetype -lfribidi -liconv -lharfbuzz -llzma -lpng12 -lmp3lame -ldcadec -lfdk-aac -lopencore-amrwb -lopencore-amrnb -logg -lvorbis -lxvidcore -lopus -lspeex -lvpx -lsoxr -lvo-aacenc -lx264 -lx265 -lvidstab -lfaac -lcaca -lwebp -lopenjpeg -ltwolame -ljpeg -largp -lintl -lasprintf -lgettextpo -ldvbv5 -lv4l1 -lv4l2 -lv4l2rds -lv4lconvert -lbz2 -lbluray -lsndfile -lbs2b -lssl -lcrypto -lrtmp -lwavpack -lvo-amrwbenc -ltheora
+Libs.private: 
+Cflags: -I${includedir}
