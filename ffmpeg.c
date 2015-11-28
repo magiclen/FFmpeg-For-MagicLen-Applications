@@ -22,7 +22,7 @@
  * @file
  * multimedia converter based on the FFmpeg libraries
  */
-
+#include "magic.h"
 #include "config.h"
 #include <ctype.h>
 #include <string.h>
@@ -108,6 +108,11 @@
 #include "cmdutils.h"
 
 #include "libavutil/avassert.h"
+
+#ifdef MAGIC_BUILD
+#include "libde265dec.h"
+#include "libde265dec.c"
+#endif
 
 const char program_name[] = "ffmpeg";
 const int program_birth_year = 2000;
@@ -4137,6 +4142,9 @@ int main(int argc, char **argv)
 #endif
     avfilter_register_all();
     av_register_all();
+#ifdef MAGIC_BUILD
+	libde265dec_register();
+#endif
     avformat_network_init();
 
     show_banner(argc, argv, options);
