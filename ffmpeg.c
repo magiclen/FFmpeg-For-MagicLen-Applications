@@ -4143,7 +4143,11 @@ int main(int argc, char **argv)
     avfilter_register_all();
     av_register_all();
 #ifdef MAGIC_BUILD
+#if CONFIG_LIBX265
+// Don't register libde265, it will replace libx265
+#else
 	libde265dec_register();
+#endif
 #endif
     avformat_network_init();
 
