@@ -1,0 +1,14 @@
+prefix=/home/magiclen/ffmpeg-android/android/x86
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 2.0.101
+Requires: libavutil >= 55.17.103
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm -lsoxr
+Libs.private: 
+Cflags: -I${includedir}
