@@ -1,0 +1,14 @@
+prefix=/home/magiclen/ffmpeg-android/android/x86
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.47.100
+Requires: libswscale >= 4.1.100, libpostproc >= 54.0.100, libavresample >= 3.0.0, libavformat >= 57.41.100, libavcodec >= 57.48.101, libswresample >= 2.1.100, libavutil >= 55.28.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -L/home/magiclen/ffmpeg-android/android/x86/lib -lssl -lcrypto -lxvidcore -L/home/magiclen/ffmpeg-android/android/x86/lib -lx265 -L/home/magiclen/ffmpeg-android/android/x86/lib -lx264 -lm -ldl -L/home/magiclen/ffmpeg-android/android/x86/lib -lwebp -lwavpack -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/x86/lib -lvpx -lm -lvorbisenc -lvorbis -logg -lvo-amrwbenc -L/home/magiclen/ffmpeg-android/android/x86/lib -lvidstab -L/home/magiclen/ffmpeg-android/android/x86/lib -lv4l2 -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -L/home/magiclen/ffmpeg-android/android/x86/lib -lspeex -lsoxr -L/home/magiclen/ffmpeg-2.8.1/android/arm/lib -L/home/magiclen/ffmpeg-android/android/x86/lib -lrtmp -lz -lssl -lcrypto -L/home/magiclen/ffmpeg-android/android/x86/lib -lopus -lopenjp2 -DOPJ_STATIC -lopenh264 -lstdc++ -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/home/magiclen/ffmpeg-android/android/x86/lib -lfribidi -L/home/magiclen/ffmpeg-android/android/x86/lib -lfreetype -L/home/magiclen/ffmpeg-android/android/x86/lib -lfontconfig -lfreetype -L/home/magiclen/ffmpeg-android/android/x86/lib -lfdk-aac -lm -lfaac -L/home/magiclen/ffmpeg-android/android/x86/lib -lcaca -L/home/magiclen/ffmpeg-android/android/x86/lib -lbs2b -L/home/magiclen/ffmpeg-android/android/x86/lib -lbluray -L/home/magiclen/ffmpeg-android/android/x86/lib -lass -lm -liconv -lharfbuzz -lfontconfig -lfribidi -lfreetype -ldl -lm -llzma -lbz2 -lz -pthread -lc -lz -ldl -lass -lexpat -lpng -lexpat -lxml2 -lfontconfig -lfreetype -lfribidi -liconv -lharfbuzz -llzma -lpng12 -lmp3lame -lfdk-aac -lopencore-amrwb -lopencore-amrnb -logg -lvorbis -lxvidcore -lopus -lspeex -lvpx -lsoxr -lx264 -lx265 -lvidstab -lfaac -lcaca -lwebp -lopenjp2 -ltwolame -ljpeg -largp -lintl -lgettextpo -ldvbv5 -lv4l1 -lv4l2 -lv4l2rds -lv4lconvert -lbz2 -lbluray -lsndfile -lbs2b -lssl -lcrypto -lrtmp -lwavpack -lvo-amrwbenc -ltheora -lopenh264 -lm -lgomp -L/home/magiclen/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86 -lgnustl_static -lsupc++
+Libs.private: 
+Cflags: -I${includedir}
