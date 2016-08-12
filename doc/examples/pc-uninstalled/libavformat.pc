@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavformat
+includedir=${pcfiledir}/../../..
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.41.100
+Requires: libavcodec >= 57.48.101, libswresample >= 2.1.100, libavutil >= 55.28.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavformat -L/home/magiclen/ffmpeg-android/android/arm/lib -lwebp -lwavpack -L/home/magiclen/ffmpeg-android/android/arm/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/arm/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/arm/lib -lvpx -lm -L/home/magiclen/ffmpeg-android/android/arm/lib -lvpx -lm -lvorbisenc -lvorbis -logg -lvo-amrwbenc -L/home/magiclen/ffmpeg-android/android/arm/lib -lv4l2 -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -L/home/magiclen/ffmpeg-android/android/arm/lib -lspeex -lsoxr -L/home/magiclen/ffmpeg-2.8.1/android/arm/lib -L/home/magiclen/ffmpeg-android/android/arm/lib -lrtmp -lz -lssl -lcrypto -L/home/magiclen/ffmpeg-android/android/arm/lib -lopus -lopenjp2 -DOPJ_STATIC -lopenh264 -lstdc++ -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/home/magiclen/ffmpeg-android/android/arm/lib -lkvazaar -L/home/magiclen/ffmpeg-android/android/arm/lib -lfribidi -L/home/magiclen/ffmpeg-android/android/arm/lib -lfreetype -L/home/magiclen/ffmpeg-android/android/arm/lib -lfontconfig -lfreetype -L/home/magiclen/ffmpeg-android/android/arm/lib -lcaca -L/home/magiclen/ffmpeg-android/android/arm/lib -lbs2b -L/home/magiclen/ffmpeg-android/android/arm/lib -lbluray -L/home/magiclen/ffmpeg-android/android/arm/lib -lass -lm -liconv -lharfbuzz -lfontconfig -lfribidi -lfreetype -ldl -lm -llzma -lbz2 -lz -pthread -lc -lz -ldl -lass -lexpat -lpng -lexpat -lxml2 -lfontconfig -lfreetype -lfribidi -liconv -lharfbuzz -llzma -lpng12 -lmp3lame -lfdk-aac -lopencore-amrwb -lopencore-amrnb -logg -lvorbis -lxvidcore -lopus -lspeex -lvpx -lsoxr -lx264 -lx265 -lvidstab -lfaac -lcaca -lwebp -lopenjp2 -ltwolame -ljpeg -largp -lintl -lgettextpo -ldvbv5 -lv4l1 -lv4l2 -lv4l2rds -lv4lconvert -lbz2 -lbluray -lsndfile -lbs2b -lssl -lcrypto -lrtmp -lwavpack -lvo-amrwbenc -ltheora -lopenh264 -lkvazaar -lm -lgomp -L/home/magiclen/android-ndk-r12b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a -lgnustl_static -lsupc++
+Cflags: -I${includedir}
