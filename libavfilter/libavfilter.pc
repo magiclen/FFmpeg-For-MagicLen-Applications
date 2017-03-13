@@ -1,0 +1,14 @@
+prefix=/home/magiclen/linux-ffmpeg/linux
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.65.100
+Requires: libswscale >= 4.2.100, libpostproc >= 54.1.100, libavresample >= 3.1.0, libavformat >= 57.56.101, libavcodec >= 57.64.101, libswresample >= 2.3.100, libavutil >= 55.34.101
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -L/home/magiclen/linux-ffmpeg/linux/lib -lssl -lcrypto -lxvidcore -L/home/magiclen/linux-ffmpeg/linux/lib -lx265 -L/home/magiclen/linux-ffmpeg/linux/lib -lx264 -lpthread -lm -ldl -L/home/magiclen/linux-ffmpeg/linux/lib -lwebp -lwavpack -L/home/magiclen/linux-ffmpeg/linux/lib -lvpx -lm -L/home/magiclen/linux-ffmpeg/linux/lib -lvpx -lm -L/home/magiclen/linux-ffmpeg/linux/lib -lvpx -lm -L/home/magiclen/linux-ffmpeg/linux/lib -lvpx -lm -lvorbisenc -lvorbis -logg -lvo-amrwbenc -L/home/magiclen/linux-ffmpeg/linux/lib -lvidstab -L/home/magiclen/linux-ffmpeg/linux/lib -lv4l2 -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -L/home/magiclen/linux-ffmpeg/linux/lib -lspeex -lsoxr -L/home/magiclen/ffmpeg-2.8.1/android/arm/lib -L/home/magiclen/linux-ffmpeg/linux/lib -lrtmp -lz -lssl -lcrypto -L/home/magiclen/linux-ffmpeg/linux/lib -lopus -L/home/magiclen/linux-ffmpeg/linux/lib -lopenmpt -lopenjp2 -DOPJ_STATIC -L/usr/local/lib -lopenh264 -lstdc++ -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/home/magiclen/linux-ffmpeg/linux/lib -lkvazaar -L/home/magiclen/linux-ffmpeg/linux/lib -lfribidi -L/home/magiclen/linux-ffmpeg/linux/lib -lfreetype -L/home/magiclen/linux-ffmpeg/linux/lib -lfontconfig -lfreetype -L/home/magiclen/linux-ffmpeg/linux/lib -lfdk-aac -lm -L/home/magiclen/linux-ffmpeg/linux/lib -lcaca -L/home/magiclen/linux-ffmpeg/linux/lib -lbs2b -L/home/magiclen/linux-ffmpeg/linux/lib -lbluray -L/home/magiclen/linux-ffmpeg/linux/lib -lass -lm -liconv -lharfbuzz -lfontconfig -lfribidi -lfreetype -ldl -lm -llzma -lbz2 -lz -pthread -lc -lz -lass -lexpat -lpng -lexpat -lpython2.7 -lxml2 -lfontconfig -lfreetype -lfribidi -liconv -lharfbuzz -llzma -lpng12 -lmp3lame -lfdk-aac -lopencore-amrwb -lopencore-amrnb -lopenmpt -lvorbisfile -lvorbis -logg -lxvidcore -lopus -lspeex -lvpx -lsoxr -lx264 -lx265 -lvidstab -lcaca -lwebp -lopenjp2 -ltwolame -largp -lgettextpo -ldvbv5 -lv4l1 -lv4l2 -lv4l2rds -lv4lconvert -lbz2 -lbluray -lsndfile -lbs2b -lssl -lcrypto -lrtmp -lwavpack -lvo-amrwbenc -ltheora -lopenh264 -ljpeg -lkvazaar -lltdl -ldl -lm -lgomp -lrt -static-libgcc -static-libstdc++
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavresample
+includedir=${pcfiledir}/../../..
+
+Name: libavresample
+Description: Libav audio resampling library
+Version: 3.1.0
+Requires: libavutil >= 55.34.101
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavresample -lm
+Cflags: -I${includedir}
