@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavdevice
+includedir=${pcfiledir}/../../..
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 57.6.100
+Requires: libavfilter >= 6.82.100, libavresample >= 3.5.0, libswscale >= 4.6.100, libavformat >= 57.71.100, libavcodec >= 57.89.100, libswresample >= 2.7.100, libavutil >= 55.58.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavdevice -L/home/magiclen/android-ffmpeg/android/x86/lib -lwebp -lwavpack -L/home/magiclen/android-ffmpeg/android/x86/lib -lvpx -lm -L/home/magiclen/android-ffmpeg/android/x86/lib -lvpx -lm -L/home/magiclen/android-ffmpeg/android/x86/lib -lvpx -lm -L/home/magiclen/android-ffmpeg/android/x86/lib -lvpx -lm -lvorbisenc -lvorbis -logg -lvo-amrwbenc -L/home/magiclen/android-ffmpeg/android/x86/lib -lv4l2 -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -L/home/magiclen/android-ffmpeg/android/x86/lib -lspeex -lsoxr -L/home/magiclen/android-ffmpeg/android/x86/lib -lopus -L/home/magiclen/android-ffmpeg/android/x86/lib -lopenmpt -lopenjp2 -DOPJ_STATIC -lopenh264 -lstdc++ -lopencv_core -lopencv_imgproc -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/home/magiclen/android-ffmpeg/android/x86/lib -lkvazaar -L/home/magiclen/android-ffmpeg/android/x86/lib -lfribidi -L/home/magiclen/android-ffmpeg/android/x86/lib -lfreetype -L/home/magiclen/android-ffmpeg/android/x86/lib -lfontconfig -lfreetype -L/home/magiclen/android-ffmpeg/android/x86/lib -lcaca -L/home/magiclen/android-ffmpeg/android/x86/lib -lbs2b -L/home/magiclen/android-ffmpeg/android/x86/lib -lbluray -L/home/magiclen/android-ffmpeg/android/x86/lib -lass -lm -liconv -lharfbuzz -lfontconfig -lfribidi -lfreetype -ldl -lm -llzma -lbz2 -lz -pthread -lc -lz -lass -lexpat -lpng -lexpat -lxml2 -lfontconfig -lfreetype -lfribidi -liconv -lharfbuzz -llzma -lpng12 -lmp3lame -lfdk-aac -lopencore-amrwb -lopencore-amrnb -lopenmpt -lvorbisfile -lvorbis -logg -lxvidcore -lopus -lspeex -lvpx -lsoxr -lx264 -lx265 -lvidstab -lcaca -lwebp -lopenjp2 -ltwolame -ljpeg -largp -lintl -lgettextpo -lv4l1 -lv4l2 -lv4l2rds -lv4lconvert -lbz2 -lbluray -lsndfile -lbs2b -lssl -lcrypto -lwavpack -lvo-amrwbenc -ltheora -lopenh264 -lkvazaar -lopencv_core -llog -lltdl -ldl -lm -lgomp -L/home/magiclen/android-ndk-r15/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86 -lgnustl_static -lsupc++
+Cflags: -I${includedir}
