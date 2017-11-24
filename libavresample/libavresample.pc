@@ -1,0 +1,14 @@
+prefix=/home/magiclen/android-ffmpeg/android/arm64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavresample
+Description: Libav audio resampling library
+Version: 3.5.0
+Requires: libavutil >= 55.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavresample -lm
+Libs.private: 
+Cflags: -I${includedir}

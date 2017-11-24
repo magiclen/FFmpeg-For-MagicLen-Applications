@@ -1,0 +1,14 @@
+prefix=/home/magiclen/android-ffmpeg/android/arm64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 57.71.100
+Requires: libavcodec >= 57.89.100, libswresample >= 2.7.100, libavutil >= 55.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -L/home/magiclen/android-ffmpeg/android/arm64/lib -lssl -lcrypto -lxvidcore -L/home/magiclen/android-ffmpeg/android/arm64/lib -lx265 -L/home/magiclen/android-ffmpeg/android/arm64/lib -lx264 -lm -ldl -L/home/magiclen/android-ffmpeg/android/arm64/lib -lwebp -lwavpack -L/home/magiclen/android-ffmpeg/android/arm64/lib -lvpx -lm -L/home/magiclen/android-ffmpeg/android/arm64/lib -lvpx -lm -L/home/magiclen/android-ffmpeg/android/arm64/lib -lvpx -lm -L/home/magiclen/android-ffmpeg/android/arm64/lib -lvpx -lm -lvorbisenc -lvorbis -logg -lvo-amrwbenc -L/home/magiclen/android-ffmpeg/android/arm64/lib -lvidstab -lm -lgomp -L/home/magiclen/android-ffmpeg/android/arm64/lib -lv4l2 -ltwolame -ltwolame -ltheoraenc -ltheoradec -logg -L/home/magiclen/android-ffmpeg/android/arm64/lib -lspeex -lsoxr -L/home/magiclen/android-ffmpeg/android/arm64/lib -lopus -L/home/magiclen/android-ffmpeg/android/arm64/lib -lopenmpt -lopenjp2 -DOPJ_STATIC -lopenh264 -lstdc++ -lopencv_core -lopencv_imgproc -lopencore-amrwb -lopencore-amrnb -lmp3lame -L/home/magiclen/android-ffmpeg/android/arm64/lib -lkvazaar -L/home/magiclen/android-ffmpeg/android/arm64/lib -lfribidi -L/home/magiclen/android-ffmpeg/android/arm64/lib -lfreetype -L/home/magiclen/android-ffmpeg/android/arm64/lib -lfontconfig -lfreetype -L/home/magiclen/android-ffmpeg/android/arm64/lib -lfdk-aac -lm -L/home/magiclen/android-ffmpeg/android/arm64/lib -lcaca -L/home/magiclen/android-ffmpeg/android/arm64/lib -lbs2b -L/home/magiclen/android-ffmpeg/android/arm64/lib -lbluray -L/home/magiclen/android-ffmpeg/android/arm64/lib -lass -lm -liconv -lharfbuzz -lfontconfig -lfribidi -lfreetype -lm -llzma -lbz2 -lz -pthread -lc -lz -lass -lexpat -lpng -lxml2 -lfontconfig -lfreetype -lfribidi -liconv -lharfbuzz -llzma -lpng12 -lmp3lame -lfdk-aac -lopencore-amrwb -lopencore-amrnb -lopenmpt -lvorbisfile -lvorbis -logg -lxvidcore -lopus -lspeex -lvpx -lsoxr -lx264 -lx265 -lvidstab -lcaca -lwebp -lopenjp2 -ltwolame -ljpeg -largp -lintl -lgettextpo -lv4l1 -lv4l2 -lv4l2rds -lv4lconvert -lbz2 -lbluray -lsndfile -lbs2b -lssl -lcrypto -lwavpack -lvo-amrwbenc -ltheora -lopenh264 -lkvazaar -lopencv_core -llog -lltdl -ldl -lm -lgomp -L/home/magiclen/android-ndk-r15c/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a -lgnustl_static -lsupc++
+Libs.private: 
+Cflags: -I${includedir}
