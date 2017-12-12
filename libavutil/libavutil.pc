@@ -1,0 +1,14 @@
+prefix=/home/magiclen/android-ffmpeg/android/arm
+exec_prefix=${prefix}
+libdir=/home/magiclen/android-ffmpeg/android/arm/lib
+includedir=/home/magiclen/android-ffmpeg/android/arm/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 55.78.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}
