@@ -155,7 +155,7 @@ You had better compile FFmpeg for Linux on Linux first to quickly make sure your
 
 Then, follow the steps to convert your build-for-linux script for Linux into a build-for-android script.
 
-(If you want to compile FFmpeg for Android x86, make sure you disable the NASM or YASM for FFmpeg and other libraries or your executable file will not executable)
+(If you want to compile FFmpeg for Android x86, make sure you disable the NASM or YASM for FFmpeg and other libraries or your executable file will not be executable)
 
 1. Look over the [documentation of Android NDK](https://developer.android.com/ndk/guides/).
 
