@@ -67,6 +67,8 @@ To simply the mass information, if you just want to compile FFmpeg as a static e
 	
 	export PKG_CONFIG_PATH="${PREFIX}/lib/pkgconfig"
 	
+	# autoreconf -i  # You may need to run this before configuring.
+	
 	./configure \
 	    --with-pic \
 	    --disable-shared \
@@ -147,7 +149,7 @@ To simply the mass information, if you just want to compile FFmpeg as a static e
 	
 4. Libraries with Different Licenses
 
-	FFmpeg defaults on LGPL. If you want enable libraries which is under GPL (such as libx264, libx265), you have to add the `--enable-gpl` option for the **configure** script. If you want to enable non-free libraries (such as libfdk-aac), you have to add the `--enable-nonfree` option.
+	FFmpeg defaults on LGPL. If you want to enable libraries which is under GPL (such as libx264, libx265), you have to add the `--enable-gpl` option for the **configure** script. If you want to enable non-free libraries (such as libfdk-aac), you have to add the `--enable-nonfree` option.
 	
 ## Compile FFmpeg for Android on Linux
 
@@ -271,4 +273,4 @@ Then, follow the steps to convert your build-for-linux script for Linux into a b
 	
 ## Why can't I compile successfully?
 
-Many people use build scripts shared by other developers but it still doesn't work. That's mainly because your environment are not totally the same. It would be better to run the build scripts and commands on a virtual machine of which operating system is just installed.
+Many people use build scripts shared by other developers but they still don't work. That's mainly because your environment are not totally the same. It would be better to run the build scripts and commands on a virtual machine of which operating system is just installed.
