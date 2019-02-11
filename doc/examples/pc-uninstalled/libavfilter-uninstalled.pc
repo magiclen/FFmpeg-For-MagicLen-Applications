@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavfilter
+includedir=.
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.40.101
+Requires:  libswscale >= 5.3.100,  libpostproc >= 55.3.100,  libavformat >= 58.20.100,  libavcodec >= 58.35.100,  libswresample >= 3.3.100,  libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavfilter -pthread -lm -L/home/magiclen/ffmpeg-linux/linux/lib -lbs2b -L/home/magiclen/ffmpeg-linux/linux/lib -lfribidi -L/home/magiclen/ffmpeg-linux/linux/lib -lopencv_imgproc -lopencv_core -lz -lrt -lpthread -lm -ldl -lstdc++ -L/home/magiclen/ffmpeg-linux/linux/lib -lva -L/home/magiclen/ffmpeg-linux/linux/lib -lass -lm -liconv -lfontconfig -lfribidi -lfreetype -L/home/magiclen/ffmpeg-linux/linux/lib -lfontconfig -lfreetype -L/home/magiclen/ffmpeg-linux/linux/lib -lfreetype -L/home/magiclen/ffmpeg-linux/linux/lib -lmfx -lstdc++ -ldl -lva-drm -lva
+Cflags: -I${includedir}

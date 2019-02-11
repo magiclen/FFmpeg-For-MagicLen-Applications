@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavutil
+includedir=.
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.22.100
+Requires: 
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavutil -pthread -L/home/magiclen/ffmpeg-linux/linux/lib -lva-drm -lva -lm -L/home/magiclen/ffmpeg-linux/linux/lib -ldrm -L/home/magiclen/ffmpeg-linux/linux/lib -lmfx -lstdc++ -ldl -lva-drm -lva -L/home/magiclen/ffmpeg-linux/linux/lib -lva
+Cflags: -I${includedir}

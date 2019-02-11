@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}/../../../libavcodec
+includedir=.
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.35.100
+Requires:  libswresample >= 3.3.100,  libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir} -Wl,-rpath,${libdir} -lavcodec -L/home/magiclen/ffmpeg-linux/linux/lib -lvpx -lm -L/home/magiclen/ffmpeg-linux/linux/lib -lvpx -lm -L/home/magiclen/ffmpeg-linux/linux/lib -lvpx -lm -L/home/magiclen/ffmpeg-linux/linux/lib -lvpx -lm -pthread -lm -lopencore-amrwb -lz -L/home/magiclen/ffmpeg-linux/linux/lib -laom -L/home/magiclen/ffmpeg-linux/linux/lib -lfdk-aac -lm -lmp3lame -lm -lopencore-amrnb -L/home/magiclen/ffmpeg-linux/linux/lib -lopenjp2 -L/home/magiclen/ffmpeg-linux/linux/lib -lopus -ltheoraenc -ltheoradec -logg -ltwolame -lvo-amrwbenc -L/home/magiclen/ffmpeg-linux/linux/lib -lvorbis -L/home/magiclen/ffmpeg-linux/linux/lib -lvorbisenc -lwavpack -L/home/magiclen/ffmpeg-linux/linux/lib -lwebp -L/home/magiclen/ffmpeg-linux/linux/lib -lx264 -lpthread -lm -ldl -L/home/magiclen/ffmpeg-linux/linux/lib -lx265 -lxvidcore -L/usr/local/lib -lopenh264 -lstdc++ -lpthread -lm -L/home/magiclen/ffmpeg-linux/linux/lib -lkvazaar -L/home/magiclen/ffmpeg-linux/linux/lib -lva -L/home/magiclen/ffmpeg-linux/linux/lib -lmfx -lstdc++ -ldl -lva-drm -lva
+Cflags: -I${includedir}
