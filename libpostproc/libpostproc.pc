@@ -1,0 +1,14 @@
+prefix=/home/magiclen/ffmpeg-android/android/x86_64
+exec_prefix=${prefix}
+libdir=/home/magiclen/ffmpeg-android/android/x86_64/lib
+includedir=/home/magiclen/ffmpeg-android/android/x86_64/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 55.5.100
+Requires: libavutil >= 56.31.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc -lm
+Libs.private: 
+Cflags: -I${includedir}
